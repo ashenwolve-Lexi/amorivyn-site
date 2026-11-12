@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Amorivyn — 18+ AI roleplay stories. Create characters and explore imaginative conversations. For adults 18 and over.">
   <title>Amorivyn — 18+ AI Roleplay Stories</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:image" content="https://amorivyn.app/logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
@@ -52,6 +55,9 @@
       text-align: center;
     }
 
+    .logo { width: 112px; height: 112px; border-radius: 26px; display:block; margin: 0 auto 1.4rem; box-shadow: 0 0 0 6px rgba(212,175,119,0.10), 0 18px 40px rgba(0,0,0,0.4); }
+    .video { margin: 0 auto 1.8rem; width: min(360px, 100%); border-radius: 20px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 18px 40px rgba(0,0,0,0.4); background:#000; }
+    .video video { display:block; width:100%; height:auto; aspect-ratio: 596 / 870; }
     .mark {
       width: 64px;
       height: 64px;
@@ -172,11 +178,15 @@
 <body>
   <main class="wrap">
     <header>
-      <div class="mark" aria-hidden="true">☽</div>
+      <img class="logo" src="logo.jpg" alt="Amorivyn logo" width="112" height="112">
       <h1>Amorivyn</h1>
       <p class="tagline">18+ AI roleplay stories</p>
       <div class="rule" aria-hidden="true"></div>
     </header>
+
+    <div class="video">
+      <video src="intro.mp4" poster="logo.jpg" controls playsinline muted preload="metadata"></video>
+    </div>
 
     <section class="card">
       <p>Create characters and explore imaginative conversations, group stories, and adventures. For adults 18 and over.</p>
